@@ -1,0 +1,142 @@
+#footer {
+  margin-top: 50px;
+  background-image:
+  url(../../img/Ellipse\ 17\ \(3\).png),
+  url(../../img/Ellipse\ 18.png),
+  url(../../img/Polygon\ 5.svg);
+  background-repeat: no-repeat;
+  background-position: top right, bottom left, bottom right;
+}
+
+#footer #footer-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#footer #footer-header1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+#footer #logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: min(50vw, 350px);
+
+}
+
+#footer .logo-assets {
+  width: min(120px, 20vw);
+}
+
+#footer #social {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: 20px 0;
+}
+
+#footer .social-container {
+  margin: 4%;
+}
+
+#footer .fa {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #00002E;
+  color: var(--blue1);
+  height: 1.9em;
+  width: 1.9em;
+  font-size: max(24px, 2.2vw);
+  text-decoration: none;
+  transition-duration: 0.4s;
+  z-index: 10;
+    color: white;
+}
+
+#footer .fa:hover {
+    margin-top: -30px;
+}
+
+@media only screen and (max-width: 420px) {
+  #footer {
+    position: relative;
+    cursor: default;
+    height: min(500px, 100vh);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #footer #logos,
+  #footer #social {
+    padding-top: 5%;
+  }
+
+
+}
+@media only screen and (min-width: 420px) and (max-width: 480px) {
+  #footer {
+    position: relative;
+    cursor: default;
+    height: min(600px, 100vh);
+    width: 100%;
+    overflow: hidden;
+  }
+
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  #footer {
+    position: relative;
+    cursor: default;
+    height: min(680px, 100vh);
+    width: 100%;
+    overflow: hidden;
+  }
+
+}
+@media only screen and (min-width: 601px) and (max-width: 700px) {
+  #footer {
+    position: relative;
+    cursor: default;
+    height: min(720px, 100vh);
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 768px) {
+  #footer {
+    position: relative;
+    cursor: default;
+    height: min(800px, 100vh);
+    width: 100%;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 768px) {
+  #footer {
+    position: relative;
+    cursor: default;
+    height: min(600px, 100vh);
+    width: 100%;
+    overflow: hidden;
+  }
+}
+.logo-assets2 {
+    height: 300px;
+}

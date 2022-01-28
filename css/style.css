@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat.ttf);
+}
+@font-face {
+  font-family: MontserratBold;
+  src: url(./fonts/Montserrat-Bold.ttf);
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+}
+h1, h2,h3{
+    margin: 0;
+}
+.title {
+    color: #00002E;
+    font-size: 50px;
+    font-family: MontserratBold;
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .title::after {
+    content: "";
+    background-color: #CCF822;
+    width: 110%;
+    height: 75%;
+    position: absolute;
+    bottom: 15%;
+    right: 10px;
+    z-index: -1;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .title {
+      font-size: 40px;
+      text-align: center;
+      letter-spacing: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .title {
+      font-size: 30px;
+    }
+  }
+p{
+  font-family: Montserrat;
+}
+h1,h2,h3,h4,h5 {
+  font-family: MontserratBold;
+}

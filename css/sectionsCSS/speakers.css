@@ -1,0 +1,101 @@
+.speakers{
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    padding: 3vh;
+}
+
+.swiper-container {
+  margin-top: 25vh;
+  position: relative;
+  height: 30vh;
+  margin-bottom: 10vh;
+}
+.swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 3000ms;
+}
+.active-sp{
+  transform: scale(1.3) !important;
+  transition: 3000ms;
+}
+.active-sp-duplicate{
+  transform: scale(1.3) !important;
+  transition: 3000ms;
+}
+.swiper-container > .swiper-slide__content {
+  position: absolute;
+  top: 0;
+}
+
+
+.speaker-card{
+    height: 22vw;
+    width: 20vw;
+    background: #00002E;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+   box-sizing: border-box;
+    border-radius: 36px;
+}
+.mySwiper1{
+  display: none;
+  height: 70vh;
+}
+.swiper-pagination-bullet{
+  height: 15px;
+  width: 15px;
+}
+.swiper-pagination{
+  width: 100vw;
+}
+.swiper-pagination-bullet-active{
+  background-color: #CCF822;
+}
+.speaker-card{
+    color: white;
+    padding: 25px;
+    overflow-y: visible;
+    align-items: center;
+    justify-content: left;
+    font-size: 90%;
+}
+.speaker-card h1{
+    text-align: center;
+}
+.speaker-card h3{
+    text-align: center;
+    color: gray;
+}
+.speaker-card img {
+    border-radius: 50%;
+    width: 100px;
+    border-style: solid;
+    border-color: #CCF822;
+    border-width: 4px;
+    border-spacing: 10px;
+    display:block;
+    position: relative;
+    margin:auto;
+    margin-top: -35%;
+}
+@media screen and (max-width:768px){
+
+    .swiper-container {
+        display: none;
+    }
+    .speaker-card{
+        height: 30vh;
+        width: 80vw;
+        font-size: 100%;
+    }
+  .mySwiper1{
+    display: block;
+  }
+    .speakers-cards-container-resp {
+        margin-top: -120px;
+    }
+
+
+}

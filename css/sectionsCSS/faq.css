@@ -1,0 +1,229 @@
+.faq {
+    height: 85vh;
+    box-sizing: border-box;
+    background-image:
+    url(../../img/Ellipse\ 17.png),
+    url(../../img/Group\ 15.png),
+    url(../../img/Polygon\ 2.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top left, bottom left,top right;
+}
+
+.center1-title{
+    text-align: center;
+    margin: 150px auto;
+}
+
+.faq-container {
+    width: 100%;
+    height: auto;
+/* Flex Box */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.box-1 {
+    display: block;
+    width: 253px;
+    height:250px;
+    background-color: #00002E;
+    border-radius: 60px;
+    text-overflow: ellipsis;
+    font-size: 50px;
+    color:white;
+    font-size: 36px;
+    color:white;
+    text-align: center;
+    border-radius: 60px;
+    width: 250px;
+    height: 250px;
+    font-family: "Gotham Black" Black;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px;
+    /* identical to box height, or 150% */
+    box-shadow: 0px 0px 50px 0px rgba(11, 97, 225, 1);
+    color: #F1F1F1;
+    overflow:hidden;
+}
+
+.box-faq p{
+    position: absolute;
+    top: auto;
+    margin: 80px 60px;
+}
+
+
+.hidden-content-faq{
+    display:none;
+}
+
+div.what:hover {
+    width: 433px;
+    height:389px;
+    transition: .5s;
+}
+div.what:hover div.hidden-content-faq{
+    display: inline-block;
+    padding-top: 20px;
+    margin-top: 0px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 72px;
+    font-size: 25px;
+}
+
+div.what:hover h1{
+    text-align: center;
+}
+
+div.when:hover {
+    width: 433px;
+    height:430px;
+    transition: .5s;
+}
+div.when:hover div.hidden-content-faq{
+    display: inline-block;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 72px;
+    font-size: 25px;
+}
+div.when:hover h1{
+    text-align: center;
+}
+div.where:hover {
+    width: 433px;
+    height:389px;
+    transition: .5s;
+}
+div.where:hover div.hidden-content-faq{
+    display: inline-block;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 72px;
+    font-size: 25px;
+}
+div.where:hover p{
+    text-align: center;
+}
+div.for-who:hover {
+    width: 433px;
+    height:433px;
+    transition: .5s;
+}
+div.for-who:hover div.hidden-content-faq{
+    display: inline-block;
+
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 72px;
+    font-size: 25px;
+}
+div.for-who:hover p{
+
+    text-align: center;
+}
+.faq-box-h1 {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.what:hover .faq-box-h1 {
+    vertical-align: text-top;
+    line-height: 80px;
+}
+div.when:hover .faq-box-h1 {
+    vertical-align: text-top;
+    line-height: 80px;
+}
+div.where:hover .faq-box-h1 {
+    vertical-align: text-top;
+    line-height: 80px;
+}
+div.for-who:hover .faq-box-h1 {
+    vertical-align: text-top;
+    line-height: 80px;
+}
+@media screen and ( max-width:768px){
+    .faq {
+        height: 85vh;
+        width: 100%;
+        box-sizing: border-box;
+        background-image:
+        url(../../img/Ellipse\ 17.png),
+        url(../../img/Group\ 15.png);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: top left, bottom left,top right;
+        background-size: auto, 0 0, auto;
+    }
+    .box-1 {
+        width: 250px;
+        height: 250px;
+        font-size: 18px;
+        margin: 20px;
+
+        }
+        .faq-container {
+        width: 100%;
+        height: auto;
+        margin-top: -50px;
+    /* Flex Box */
+        display: flex;
+        flex-direction: initial;
+        justify-content: space-around;
+        align-items: center;
+        }
+    div.what:hover {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .faq-box-h1 {
+        line-height: 250px;
+        text-align: center;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 48px;
+    }
+    .faq-container:hover   div.box-1:not(:hover) {
+        display: none;
+    }
+    div.box-1:hover {
+        margin-top: 90px;
+    }
+    .box-2 {
+        margin-top: 150px;
+        flex-direction: initial;
+    }
+}
+@media screen and (max-width: 581px) {
+    .box-1 {
+        width: 150px;
+        height : 150px;
+    }
+    .faq-box-h1 {
+        line-height: 150px;
+        font-size: 30px;
+    }
+    table {
+        font-size: 25px;
+    }
+    div.box-1:hover {
+        margin-top: -0%;
+    }
+}
+
+h1.center-box.faq-box-h1{
+    font-size: 49px;
+}

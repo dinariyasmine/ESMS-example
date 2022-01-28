@@ -1,0 +1,134 @@
+.about{
+    width: 100vw;
+    margin-top: 10vh;
+}
+.header-about{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+}
+.first-about{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+}
+.first-about-left{
+width: 50%;
+height: 100%;
+display: grid;
+place-items: center;
+}
+.first-about-left img{
+    width: 50%;
+    transform: scale(3);
+}
+.first-about-right{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    font-weight:400;
+    font-size: 25px;
+    text-align:justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#responsive-about{
+    display: none;
+}
+.about2{ 
+    min-height: 100vh;
+    width: 100vw;           
+}
+.second-header-about{
+    margin-left: 10%;
+}
+.second-about{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;    
+}
+.second-about-left{
+    width: 50%;
+    height: 100%;
+    font-size: 25px;
+    text-align:justify;
+    display: flex;
+    align-items: center;
+    
+}
+.second-about-left p {
+    margin-left: 30px;
+    padding: 20px;
+}
+.second-about-right{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+#web-about-2{
+    width: 50%;
+    transform: scale(2.5);
+}
+.img1{
+    position: absolute;
+    height: 16%;
+    margin-left: 0vh;
+    margin-top: -14vh;
+    transform: rotate(-180deg);
+}
+#responsive-about2{
+    display: none;
+}
+@media screen and (max-width:768px){
+    .header-about{
+        width: 100%;
+        justify-content: center;
+    }
+    .first-about{
+        flex-direction: column;
+    }
+    .first-about-left, .first-about-right{
+        width: 90%;
+        height: 0%;
+        font-size: 20px;
+    }
+    #web-about{
+        display: none;
+    }
+    #responsive-about{
+        display: block;
+        height: 50%;
+        object-fit: cover;
+    }
+    .second-about{
+        flex-direction: column-reverse;
+    }
+    .second-header-about{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .second-about-left, .second-about-right{
+        width: 90%;
+        height: 50%;
+        font-size: 20px;
+    }
+    .second-about-left p{
+        margin-left: 10%;
+        padding: 0;
+    }
+    #web-about-2{
+        display: none;
+    }
+    #responsive-about2{ 
+        display: block;
+        width: 50%;
+        transform: scale(2);
+    }    
+}
+
